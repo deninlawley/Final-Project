@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="Styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="Styles/cardcontainters.css">
+  <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <title>Michael & Roy Watch Company</title>
+</head>
+<body>
+  <section class="hero-container">
+    <div class="hero-text">
+      <img src="Assets/MHLogo2.png" alt="Michael & Roy Company Logo">
+    </div>
+  </section>
+  <section class="navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </section>
+    <div class="container content-container" tabindex="0">
+  <ul class="card-container">
+    <li class="card">
+      <h2>Who Is Denin Lawley?</h2>
+      <p>Denin Lawley is a Graphic Designer and Photographer from Calgary Canada.</p>
+      <p>He primarily shooots architecture, portraits, and automotive.</p>
+    </li>
+    <li class="card">
+      <img src="Assets/DeninLawley.jpg" alt="A photo of a very cold Denin Lawley">
+      <h3>Denin Lawley</h3>
+    </li>
+  </ul>
+</div>
+<div class="container content-container" tabindex="0">
+  <H2>Photography Samples</H2>
+  <ul class="card-container">
+    <li class="card">
+      <img src="Assets/BowRoof.jpg" alt="The roof of the Bow Calgary">
+      <h3>The Bow Calgary</h3>
+    </li>
+    <li class="card">
+      <img src="Assets/Windmill.jpg" alt="A Landscape with a Windmill in southern Alberta">
+      <h3>Windmill in Southern Alberta</h3>
+    </li>
+    <li class="card">
+      <img src="Assets/SeattleLibrary.JPG" alt="An interior shot of the Seattle Library">
+      <h3>Seattle Public Library</h3>
+    </li>
+    <li class="card">
+      <img src="Assets/Girl.JPG" alt="A portrait photo of a little girl">
+      <h3>Little Girl</h3>
+    </li>
+    <li class="card">
+      <img src="Assets/Person.JPG" alt="A portrait of a person On The Train">
+      <h3>Person on the Train</h3>
+    </li>
+    <li class="card">
+      <img src="Assets/Man.JPG" alt="A photo of Denin's Grandfather">
+      <h3>Grandfather</h3>
+    </li>
+    <li class="card">
+      <img src="Assets/Lamborghini.jpg" alt=" A close up of the hood of a Lamborghini Aventador">
+      <h3>Lamborghini Aventador</h3>
+    </li>
+    <li class="card">
+      <img src="Assets/Toyota.JPG" alt="A close up of the headlight of a Toyota Supra">
+      <h3>Toyota Supra</h3>
+    </li>
+    <li class="card">
+      <img src="Assets/BMW.jpg" alt="A close up of the headlight of a BMW M3">
+      <h3>BMW M3</h3>
+    </li>
+  </ul>
+</div>
+  <section class="container accordion-container" tabindex="0">
+    <h2>Types of Photography</h2>
+    <button class="accordion">Architecture</button>
+    <div class="panel">
+      <p>Buildings and structures around Calgary, Seattle, and Kelowna.</p>
+    </div>
+    
+    <button class="accordion">Portraits</button>
+    <div class="panel">
+      <p>Friends and family and occational candid street photography.</p>
+    </div>
+    
+    <button class="accordion">Automotive</button>
+    <div class="panel">
+      <p>Unstaged shoots at car shows and on the street.</p>
+    </div>
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+  </section>
+  <section class="footer-container">
+    <iframe class="footer-item-a" width="560" height="315" src="https://www.youtube.com/embed/3p4ttlVnZXw?si=o0KCuxP5H_pQ2lBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <section class="footer-item-b">
+    <h3 class="footer-text">Links</h3>
+    <p class="footer-text-links">Privacy Policy</p>
+    <p class="footer-text-links">Terms of Use</p>
+    <p class="footer-text-links">Accessibility</p>
+    </section>
+    <section class="footer-item-c">
+      <h3 class="footer-text">Contact Information</h3>
+      <p class="footer-text">Availible for work locally in Calgary Alberta Canada</p>
+      <p class="footer-text">Phone: 555-555-5555</p>
+      <p class="footer-text">Email: denin@email.ca</p>
+    </section>
+    <section class="footer-item-d">
+      <p class="footer-text">
+        Copyright Denin Lawley 
+      </p>
+      <p class="footer-text" id="copyrightyear"></p>
+      <script>
+      const d = new Date();
+      let year = d.getFullYear();
+      document.getElementById("copyrightyear").innerHTML = year;
+      </script>
+    </section>
+  </section>
+</body>
+</html>
