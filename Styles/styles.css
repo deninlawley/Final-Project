@@ -32,11 +32,13 @@ position: relative;
 .footer-container {
   background-color: #24292E;
   position: relative;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  grid-template-rows: auto auto auto auto auto;
-  column-gap: 40px;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   row-gap: 40px;
+  column-gap: 100px;
 }
 
 .footer-text-links {
@@ -46,25 +48,6 @@ position: relative;
 
 .footer-text {
   color: #eee;
-}
-
-.footer-item-a {
-  grid-column: 1 / 3;
-  grid-row: 1 / 5;
-}
-
-.footer-item-b {
-  grid-column: 4 / 4;
-}
-
-.footer-item-c {
-  grid-column: 5 / 6;
-}
-
-.footer-item-d {
-  grid-column: 4 / 4;
-  grid-row: 4 / 4;
-  justify-self: center;
 }
 
 .hero-text {
@@ -77,8 +60,8 @@ color: black;
 }
 
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #F2D0A4;
+  color: #7C1325;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -90,7 +73,7 @@ color: black;
 }
 
 .active, .accordion:hover {
-  background-color: #ccc; 
+  background-color: #F2D0A4; 
 }
 
 .panel {
@@ -98,12 +81,12 @@ color: black;
   display: none;
   background-color: #FFECCC;
   overflow: hidden;
-  color: #444;
+  color: #7C1325;
 }
 .accordion:after {
   content: '\02795';
   font-size: 13px;
-  color: #777;
+  color: #7C1325;
   float: right;
   margin-left: 5px;
 }
@@ -144,4 +127,10 @@ h4 {
   font-size: 400%;
   text-align: center;
   padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+h5 {
+  font-size: 200%;
 }
