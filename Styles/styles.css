@@ -1,5 +1,6 @@
 body, html {
   height: 100%;
+  background-color: #FFECCC;
 }
 
 .hero-container {
@@ -19,12 +20,12 @@ position: relative;
 }
 
 .content-container {
-  background-color: #fff;
+  background-color: #FFECCC;
   height: auto;
 }
 
 .accordion-container {
-  background-color: #fff;
+  background-color: #FFECCC;
   height: auto;
 }
 
@@ -95,7 +96,7 @@ color: black;
 .panel {
   padding: 0 18px;
   display: none;
-  background-color: white;
+  background-color: #FFECCC;
   overflow: hidden;
   color: #444;
 }
@@ -137,4 +138,10 @@ img {
   font-weight: bold;
   padding: 2em;
   text-decoration: none;
+}
+
+h4 {
+  font-size: 400%;
+  text-align: center;
+  padding-top: 3%;
 }
