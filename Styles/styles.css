@@ -123,3 +123,18 @@ img {
   text-align: center;
   padding-top: 2%;
 }
+
+.navigation-links {
+  color: #6C9A8B;
+  font-weight: bold;
+  padding: 2em;
+  text-decoration: underline;
+  text-decoration-color: #6C9A8B;
+}
+
+.current-page {
+  color: #7C1325;
+  font-weight: bold;
+  padding: 2em;
+  text-decoration: none;
+}
