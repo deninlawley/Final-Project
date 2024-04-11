@@ -5,7 +5,7 @@ body, html {
 
 .hero-container {
 background-color:#7C1325;
-height: 50%;
+height: 45%;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -124,7 +124,7 @@ img {
 }
 
 h4 {
-  font-size: 400%;
+  font-size: 300%;
   text-align: center;
   padding-top: 3%;
   padding-left: 5%;
